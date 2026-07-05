@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Autores - WeBook</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="menu">
+    <h1>WeBook</h1>
+
+    <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="graficos.html">Gráficos</a></li>
+        <li><a href="favoritos.html">Favoritos</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+
+        <li><a href="login.html" id="loginBtn">Login</a></li>
+        <li><a href="#" id="logoutBtn" style="display:none;">Logout</a></li>
+    </ul>
+</nav>
+
+<div class="principal">
+
+    <h1>Cadastro de Autores</h1>
+
+    <form id="formAutor">
+
+        <input type="hidden" id="id">
+
+        <label>Nome</label>
+        <input
+            type="text"
+            id="nome"
+            required
+            style="width:100%;padding:10px;margin:10px 0;"
+        >
+
+        <label>Categoria</label>
+        <input
+            type="text"
+            id="categoria"
+            required
+            style="width:100%;padding:10px;margin:10px 0;"
+        >
+
+        <label>Imagem (URL)</label>
+        <input
+            type="text"
+            id="imagem"
+            required
+            style="width:100%;padding:10px;margin:10px 0;"
+        >
+
+        <label>Descrição Curta</label>
+        <textarea
+            id="descricaoCurta"
+            rows="3"
+            style="width:100%;padding:10px;margin:10px 0;"
+        ></textarea>
+
+        <label>Descrição Completa</label>
+        <textarea
+            id="descricaoCompleta"
+            rows="5"
+            style="width:100%;padding:10px;margin:10px 0;"
+        ></textarea>
+
+        <label>Nascimento</label>
+        <input
+            type="text"
+            id="nascimento"
+            style="width:100%;padding:10px;margin:10px 0;"
+        >
+
+        <label>Nacionalidade</label>
+        <input
+            type="text"
+            id="nacionalidade"
+            style="width:100%;padding:10px;margin:10px 0;"
+        >
+
+        <label>Movimento Literário</label>
+        <input
+            type="text"
+            id="movimento"
+            style="width:100%;padding:10px;margin:10px 0;"
+        >
+
+        <label>Destaque</label>
+
+        <select
+            id="destaque"
+            style="width:100%;padding:10px;margin:10px 0;"
+        >
+            <option value="true">Sim</option>
+            <option value="false">Não</option>
+        </select>
+
+        <button
+            type="submit"
+            style="padding:12px 25px;margin-top:15px;"
+        >
+            Salvar Autor
+        </button>
+
+    </form>
+
+    <hr style="margin:40px 0;">
+
+    <h2>Autores Cadastrados</h2>
+
+    <table
+        border="1"
+        cellpadding="10"
+        cellspacing="0"
+        width="100%"
+    >
+        <thead>
+
+            <tr>
+                <th>Nome</th>
+                <th>Categoria</th>
+                <th>Ações</th>
+            </tr>
+
+        </thead>
+
+        <tbody id="listaAutores"></tbody>
+
+    </table>
+
+</div>
+
+<script src="js/cadastro.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - WeBook</title>
+
+    <link rel="stylesheet" href="css/login.css">
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background:#f5f5f5;
+        }
+
+        .login-container{
+            width:400px;
+            max-width:90%;
+            margin:50px auto;
+            background:#fff;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,.2);
+        }
+
+        .login-container h2{
+            margin-bottom:15px;
+        }
+
+        .login-container input{
+            width:100%;
+            padding:10px;
+            margin:8px 0;
+            box-sizing:border-box;
+        }
+
+        .login-container button{
+            width:100%;
+            padding:12px;
+            margin-top:10px;
+            cursor:pointer;
+        }
+
+        .erro{
+            color:red;
+            margin-top:10px;
+        }
+
+        hr{
+            margin:30px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+
+    <h2>Login</h2>
+
+    <input type="text" id="login" placeholder="Usuário">
+    <input type="password" id="senha" placeholder="Senha">
+
+    <button onclick="logar()">Entrar</button>
+
+    <hr>
+
+    <h2>Cadastrar</h2>
+
+    <input type="text" id="novoLogin" placeholder="Novo usuário">
+    <input type="password" id="novaSenha" placeholder="Nova senha">
+
+    <button onclick="cadastrar()">Cadastrar</button>
+
+    <p class="erro" id="erro"></p>
+
+</div>
+
+<script src="js/login.js"></script>
+
+</body>
+</html>

@@ -10,15 +10,14 @@ Sugerimos o uso das seguintes ferramentas acessíveis: [FullCalendar](https://fu
 
 ## Informações do trabalho
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
-
+- Nome:Daniel Gomes Rolando
+- Matricula:926043
+- Proposta de projeto escolhida:Página de Livros (WeBook)
+- Breve descrição sobre seu projeto: Aplicação web voltada para a consulta e gerenciamento de autores brasileiros
 **Print da tela com a implementação**
 
-<< Coloque aqui uma breve explicação da implementação feita nessa etapa>>
+![alt text](image.png)
 
-<<  COLOQUE A IMAGEM TELA 1 AQUI >>
+![alt text](image-1.png)
 
-<<  COLOQUE A IMAGEM TELA 2 AQUI >>
+![alt text](image-2.png)
